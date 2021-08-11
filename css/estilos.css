@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+body {
+    background-image: url(../img/background-site3.jpg);
+    background-size: 100vw auto;
+    height: 100vh;
+    
+    
+}
+nav {
+    background-image: linear-gradient(to right, #dd95b3, #a0c1c2);
+    height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu ul{
+    display:flex;
+    
+    padding: 15px 35px;
+    
+}
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    padding:10px;
+    text-transform: uppercase;
+    color: #f4f9fa;
+    letter-spacing:2px;
+    font-family: Jura;
+    font-weight: 600;
+    
+}
+.menu a:hover {
+    text-decoration:underline;   
+}
+
+.site-titulo,
+.site-subtitulo{
+    color: #fff;
+    text-align: center; 
+    font-family: Jura;  
+}
+
+.site-titulo {
+    font-size:50px;
+    padding-top:50px;
+    padding-bottom: 15px;    
+}
+.site-subtitulo{
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing:10px;
+}
+
+section {
+    display:flex;
+}
+@media(max-width:1200px){
+    body {
+        font-size:20px;
+        background-image: none;
+        background-color: #4da8b4;
+    }
+   
+}
+
