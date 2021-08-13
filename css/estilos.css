@@ -1,44 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;600&display=swap');
+
+    
 *{
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
+    box-sizing: border-box;
     text-decoration: none;
     font-size: 13px;
 }
 body {
     background-image: url(../img/background-site3.jpg);
     background-size: 100vw auto;
-    height: 100vh;
-    
-    
+    height: 100vh;        
 }
-nav {
-    background-image: linear-gradient(to right, #dd95b3, #a0c1c2);
-    height:60px;
-    display:flex;
+
+header {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+}
+.menu {
+    position:fixed;
+    top: 0;
+    right:0;
+    width: 100vh;
+}
+.linha-menu {
+    background-image: linear-gradient(to right, #f39a95, #b5e9e1);
+    width:95%;
+    height: 2px;
+    margin: 0 auto;
 }
 
 .menu ul{
     display:flex;
-    
-    padding: 15px 35px;
-    
+    justify-content: flex-end;
+    padding: 25px 40px;
 }
 .menu li {
     list-style: none;
+    
 }
 
-.menu a{
-    padding:10px;
+.menu li a{
+    padding:10px 20px;
     text-transform: uppercase;
-    color: #f4f9fa;
-    letter-spacing:2px;
+    color: #fff;
+    letter-spacing:0.3em;
     font-family: Jura;
     font-weight: 600;
-    
+    display:block;
 }
 .menu a:hover {
     text-decoration:underline;   
@@ -49,28 +63,82 @@ nav {
     color: #fff;
     text-align: center; 
     font-family: Jura;  
+    
 }
 
 .site-titulo {
-    font-size:50px;
-    padding-top:50px;
-    padding-bottom: 15px;    
+    font-size:4em;
+    
 }
 .site-subtitulo{
-    font-size:20px;
+    font-size:1.5em;
     text-transform: uppercase;
-    letter-spacing:10px;
-}
-
-section {
-    display:flex;
-}
-@media(max-width:1200px){
-    body {
-        font-size:20px;
-        background-image: none;
-        background-color: #4da8b4;
-    }
+    letter-spacing:0.5em;
    
 }
+
+.portifolio {
+    padding:2em;
+    height:50vh;
+}
+
+ h2{
+    color: #fff;
+    font-family: Jura; 
+    font-size:2em;
+    text-transform: uppercase;
+    letter-spacing:0.3em;
+}
+.portifolio .grid{
+    display:grid;
+    gap: 2em;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+}
+
+.portifolio figure{
+    text-align: center;
+    border: 1px solid #fff;
+    margin-top: 25px;
+    padding:5px;
+}
+
+.portifolio figure:hover{
+    background-color:#8fc5c5;
+}
+
+.img-portfolio{
+    height:240px;
+    width: 400px;
+    object-fit: cover;
+    object-position: left top;
+
+}
+figcaption {
+    color: #e99393;
+    font-size: 2em;
+    font-family: Jura, sans-serif;
+}
+
+.sobre p {
+    color: #fff;
+    text-indent: 1.4em;
+    margin-bottom:1.4em;
+    text-align: justify;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:600px){
+    body {
+        font-size: 18px;
+    }
+}
+
+    
+   
+
 
